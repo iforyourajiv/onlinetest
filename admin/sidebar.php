@@ -8,11 +8,15 @@
 <body>
     <!-- Sidebar -->
 <div class="sidebar">
-  <h3 class="item">Dashboard</h3>
-  <a href="addtest.php" class="item">Add Test </a>
-  <a href="managequiz.php" class="item">Manage Test </a>
-  <a href="addquestion.php" class="item">Add Question</a>
-  <a href="managequestion.php" class="item">Manage Question</a>
-  <a href="#" class="item">Manage Users</a>
-  <a href="logout.php" class="item">Logout</a>
+  <h3 class="head3">Dashboard</h3>
+  <ul>
+  <li><a href="addtest.php" class="item">Add Test </a></li>
+  <li><a href="managequiz.php" class="item">Manage Test </a></li>
+  <li><a href="addquestion.php" class="item">Add Question</a></li>
+  <li><a href="managequestion.php" class="item">Manage Question</a></li>
+  <li><a href="manageuser.php" class="item">Manage Users</a></li>
+  <li><a href="logout.php" class="item">Logout</a></li>
+
+  </ul>
+  
 </div>

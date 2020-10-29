@@ -26,10 +26,34 @@ input {
 .sidebar {
   height: 100%;
   width: 20%;
-  background-color: white;
+  background-color:black;
   position: fixed;
 }
 
+.sidebar ul{
+  display: inline;
+}
+
+.sidebar a{
+color: white;
+text-decoration: none;
+text-align: center;
+font-size: 18px;
+}
+
+.sidebar a:hover {
+  color: red;
+}
+
+.head3 {
+  padding: 8px 40px;
+  float: left;
+  width: auto;
+  border: none;
+  color: white;
+  font-size: 30px;
+  display: inline;
+}
 .item {
   padding: 8px 40px;
   float: left;
