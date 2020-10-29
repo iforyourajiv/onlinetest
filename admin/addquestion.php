@@ -1,20 +1,19 @@
 <?php
 include_once './config.php';
-$noti="";
-if(isset($_POST['submit'])) {
+$noti = "";
+if (isset($_POST['submit'])) {
 
-    $question= $_POST['question'];
-    $answer1 = $_POST["answer1"];        
-    $answer2 = $_POST["answer2"];        
-    $answer3 = $_POST["answer3"];        
-    $answer4 = $_POST["answer4"];        
+    $question = $_POST['question'];
+    $answer1 = $_POST["answer1"];
+    $answer2 = $_POST["answer2"];
+    $answer3 = $_POST["answer3"];
+    $answer4 = $_POST["answer4"];
     $correct = $_POST["correct"];
     $test_id = $_POST['test'];
 
-
-    $query="INSERT INTO question(question,option1,option2,option3,option4,correct,test_id)
+    $query = "INSERT INTO question(question,option1,option2,option3,option4,correct,test_id)
             VALUES ('$question','$answer1','$answer2','$answer3','$answer4','$correct','$test_id')";
-    if(mysqli_query( $conn, $query)) {
+    if (mysqli_query($conn, $query)) {
         $noti .= "<div>Question Successfully Added in Quiz</div>";
     } else {
         $noti .= "<div>Something Went Wrong</div>";

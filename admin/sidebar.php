@@ -14,4 +14,5 @@
   <a href="addquestion.php" class="item">Add Question</a>
   <a href="managequestion.php" class="item">Manage Question</a>
   <a href="#" class="item">Manage Users</a>
+  <a href="logout.php" class="item">Logout</a>
 </div>

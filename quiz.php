@@ -13,7 +13,7 @@ if(isset($_GET['test_id'])) {
     $_SESSION['test']=$testname;
 }
 
-$query = "SELECT * FROM question where test_id='$testid'";
+$query = "SELECT * FROM question   where test_id='$testid' ORDER BY RAND() LIMIT 10";
 $result = mysqli_query($conn, $query);
 
 if (mysqli_num_rows($result) > 0) {

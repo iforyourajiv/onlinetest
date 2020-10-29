@@ -30,8 +30,8 @@ if (mysqli_num_rows($result) > 0) {
   <tr>
     <td><?php echo $test_id ?></td>
     <td><?php echo $test_name ?></td>
-    <td><a href='#'>Edit</a>
-       <a href='#'>Delete</a>
+    <td>
+       <a href='deletequiz.php?id=<?php echo $test_id ?>'>Delete</a>
     </td>
 
   </tr>

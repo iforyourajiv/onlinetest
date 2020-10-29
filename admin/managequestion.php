@@ -30,6 +30,7 @@ if (mysqli_num_rows($result) > 0) {
   </tr>
   <?php
     while ($row = mysqli_fetch_assoc($result)) {
+            $q_id=$row['qid'];
             $question= $row['question'];
             $option1 = $row['option1'];
             $option2 = $row['option2'];
@@ -46,8 +47,8 @@ if (mysqli_num_rows($result) > 0) {
     <td><?php echo $option4 ?></td>
     <td><?php echo $correct ?></td>
     <td><?php echo $testid ?></td>
-    <td><a href='#'>Edit</a>
-       <a href='#'>Delete</a>
+    <td><a href='editquestion.php?id=<?php echo $q_id ?>'>Edit</a>
+       <a href='deletequestion.php?id=<?php echo $q_id ?>'>Delete</a>
     </td>
 
   </tr>

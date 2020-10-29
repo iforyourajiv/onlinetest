@@ -2,6 +2,11 @@
 if (!isset($_SESSION)) {
     session_start();
 }
+
+if (isset($_SESSION['username'])) {
+    $_SESSION['welcome'] = "Welcome" . $_SESSION['username'];
+    header("location:dashboard.php");
+}
 include_once './config.php';
 $msg = "";
 if (isset($_POST['submit'])) {

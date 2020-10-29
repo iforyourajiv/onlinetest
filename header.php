@@ -29,7 +29,7 @@ if (!isset($_SESSION['username'])) {
     </header>
     <nav>
         <a href="userdashboard.php">Home</a>
-        <a href="completedtest.php">Your Test</a>
+        <a href="usertest.php">Your Test</a>
         <a class="logout" href="logout.php">Logout</a>
         <h3>Welcome :<?php echo $_SESSION["username"] ?></h3>
 	</nav> 
